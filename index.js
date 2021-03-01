@@ -12,6 +12,8 @@ const server = http.createServer((req, res) => {
 });
 
 //When the server starts, the below function will run
+//The listen method will start the listening port which allows the server to 
+//accept incoming reqs
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}`)
 })
